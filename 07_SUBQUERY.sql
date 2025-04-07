@@ -25,7 +25,7 @@ WHERE DEPT_CODE = 'D9';
 
 -- 3) 부서코드가 노옹철 사원가 같은 소속의 직원 명단 조회
 --> 위의 2개의 단계를 하나의 쿼리로
-SELECT EMP_NAME, DEPT_CODE
+SELECT EMP_NAME 이름 , DEPT_CODE
 FROM EMPLOYEE
 WHERE DEPT_CODE = (SELECT DEPT_CODE
 									 FROM EMPLOYEE
